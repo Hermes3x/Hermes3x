@@ -1,28 +1,83 @@
 # Veille professionnelle et technique — Jonathan Zvara
 
-> Développeur d'application Python · mise à jour **chaque lundi** · dernière mise à jour : **03/11/2026**
+> Développeur d'application Python · veille **hebdomadaire automatisée** · dernière mise à jour : **03/11/2026**
 
 ## Sommaire
 
-1. [Mon projet professionnel](#1-mon-projet-professionnel)
-2. [Opportunités professionnelles](#2-opportunités-professionnelles)
-3. [Où et comment je cherche](#3-où-et-comment-je-cherche)
+1. [Comment je réalise ma veille](#1-comment-je-réalise-ma-veille)
+2. [Mon projet professionnel](#2-mon-projet-professionnel)
+3. [Opportunités professionnelles](#3-opportunités-professionnelles)
 4. [Sources de veille technique](#4-sources-de-veille-technique)
-5. [Comment je choisis une source](#5-comment-je-choisis-une-source)
-6. [Ma routine de mise à jour](#6-ma-routine-de-mise-à-jour)
-7. [Journal de progression](#7-journal-de-progression)
-8. [Historique des mises à jour](#8-historique-des-mises-à-jour)
+5. [Journal de progression](#5-journal-de-progression)
 
 ---
 
-## 1. Mon projet professionnel
+## 1. Comment je réalise ma veille
+
+Ma veille des offres est **automatisée** : j'ai créé une *skill* pour Claude que je lance chaque
+semaine. Elle interroge les job boards ci-dessous avec mes critères, puis met à jour la
+[section 3](#3-opportunités-professionnelles).
+
+### Comment je trouve une offre adaptée — ce que fait la skill
+
+1. **Filtrer** : mot-clé `python` ou `django`, « télétravail complet », niveau junior ou
+   « 0 à 2 ans ».
+2. **Lire l'offre à l'envers** : la stack et les missions avant le titre. Un « développeur
+   full-stack » qui fait 80 % de Django m'intéresse ; un « développeur Python » qui fait de la
+   data science, non.
+3. **Vérifier le télétravail** : « full remote » doit être écrit dans l'offre, pas seulement
+   dans le filtre du site. Sinon, l'offre est notée « hybride ».
+4. **Croiser trois signaux** : l'offre, la page de l'entreprise (taille, produit, équipe tech) et
+   les avis (Glassdoor, Welcome to the Jungle).
+5. **Rapprocher de mon portfolio** : pour chaque offre retenue, le projet le plus proche de sa
+   stack (OC Lettings pour Django et CI/CD, Epic Events pour la sécurité et PostgreSQL, SoftDesk
+   pour une API REST).
+
+### Job boards interrogés
+
+| Source | Recherche enregistrée | Pourquoi |
+|---|---|---|
+| **LinkedIn Jobs** | [« développeur python », France, remote, débutant](https://www.linkedin.com/jobs/search/?keywords=d%C3%A9veloppeur%20python&location=France&f_WT=2&f_E=1%2C2&f_TPR=r604800) | La source la plus riche ; les filtres s'appliquent une fois connecté |
+| **HelloWork** | [python, télétravail complet](https://www.hellowork.com/fr-fr/emploi/recherche.html?k=python&l=France&t=Complet) | Filtre full remote fiable ; peu de volume |
+| **Free-Work** | [CDI](https://www.free-work.com/fr/tech-it/jobs?query=python&contracts=permanent&remote=full) · [freelance](https://www.free-work.com/fr/tech-it/jobs?query=python&contracts=contractor&remote=full) en full remote | Affiche le taux de télétravail, le salaire ou le TJM, la date exacte |
+| **Welcome to the Jungle** | [emplois full remote](https://www.welcometothejungle.com/fr/pages/emploi-full-remote) · [développeur Python](https://www.welcometothejungle.com/fr/pages/emploi-developpeur-python) | Fiches détaillées : télétravail, expérience demandée, culture d'entreprise |
+| **RemoteFR** | [compétence Python](https://remotefr.com/competences/python) | Job board 100 % télétravail, centré sur la France |
+| **Jobgether** | [Python, remote, France](https://jobgether.com/remote-jobs/france/python-developer) | Offres remote internationales, avec l'éligibilité par pays |
+| **AFPy** | [forum emploi](https://discuss.afpy.org/c/emplois/14) | Peu d'offres, mais 100 % Python, souvent avec télétravail |
+| **France Travail** | [« développeur python »](https://candidat.francetravail.fr/offres/recherche?motsCles=d%C3%A9veloppeur+python&offresPartenaires=true&tri=1) | Gros volume, CDD et postes junior en région |
+
+### Le marché caché
+
+Une partie des postes ne sont jamais publiés. Je m'y prépare par :
+
+- mon profil **LinkedIn**, tenu à jour avec le lien de ce portfolio ;
+- les **candidatures spontanées** auprès des entreprises qui recrutent souvent des profils Django ;
+- la communauté **AFPy** (Association francophone Python), son forum et ses offres d'emploi.
+
+### Comment je la tiens à jour facilement
+
+| Quand | Quoi |
+|---|---|
+| **Chaque semaine** | Je lance la skill : elle relève les nouvelles offres et met à jour la section 3 |
+| **Au fil de l'eau** | La newsletter arrive dans un dossier dédié de ma messagerie ; les chaînes YouTube sont dans mes abonnements |
+| **Après chaque projet** | J'ajoute le projet au [portfolio](https://github.com/Hermes3x) et au journal de progression |
+| **Chaque mois** | Je retire les sources que je ne lis plus et les offres de plus d'un mois |
+
+**Pourquoi c'est facile à tenir** : la collecte est automatisée, et tout tient dans **un seul
+fichier Markdown** versionné sur GitHub. Je le modifie depuis VS Code ou directement dans le
+navigateur, et l'historique Git garde une trace datée de chaque mise à jour.
+
+---
+
+## 2. Mon projet professionnel
 
 | Critère | Mon choix |
 |---|---|
 | **Objectif** | Premier poste de **développeur Python back-end junior** |
 | **Contrat** | CDI ou CDD |
 | **Lieu** | **Télétravail complet**, entreprise basée en France |
-| **Stack visée** | Python · Django / Django REST Framework · PostgreSQL · Docker · CI/CD |
+| **Stack visée** | Python · Django / Django REST Framework · PostgreSQL |
+| **Outils souvent demandés en plus** | Docker et intégration continue (CI/CD) : cités dans 5 des 10 offres d'emploi relevées le 03/11/2026 |
 | **Plan B** | Missions freelance courtes en Python (scripts, API, automatisation) pour accumuler de l'expérience |
 | **Portfolio** | [github.com/Hermes3x](https://github.com/Hermes3x) |
 
@@ -32,15 +87,7 @@ moindre privilège) et du déploiement continu (Docker, GitHub Actions, Sentry).
 
 ---
 
-## 2. Opportunités professionnelles
-
-### Comment je suis une offre
-
-Chaque offre retenue passe par ces statuts, sur le modèle du tableau de bord du cours
-[OpenClassrooms](https://openclassrooms.com/fr/courses/8033446-trouvez-votre-premier-emploi-en-tant-que-developpeur/8100331-preparez-votre-tableau-de-bord) :
-
-**À étudier** → **À candidater** → **Candidature envoyée** (date) → **Relancée** (+15 jours) →
-**Entretien** (date) → **Offre** / **Refus** / **Sans réponse** (+1 mois, offre classée)
+## 3. Opportunités professionnelles
 
 ### Offres d'emploi — télétravail complet (relevé du 03/11/2026)
 
@@ -88,123 +135,9 @@ Chaque offre retenue passe par ces statuts, sur le modèle du tableau de bord du
 
 ---
 
-## 3. Où et comment je cherche
-
-### Job boards suivis
-
-| Source | Recherche enregistrée | Pourquoi |
-|---|---|---|
-| **LinkedIn Jobs** | [« développeur python », France, remote, débutant](https://www.linkedin.com/jobs/search/?keywords=d%C3%A9veloppeur%20python&location=France&f_WT=2&f_E=1%2C2&f_TPR=r604800) | La source la plus riche ; les filtres s'appliquent une fois connecté |
-| **HelloWork** | [python, télétravail complet](https://www.hellowork.com/fr-fr/emploi/recherche.html?k=python&l=France&t=Complet) | Filtre full remote fiable ; peu de volume → alerte e-mail |
-| **Free-Work** | [CDI](https://www.free-work.com/fr/tech-it/jobs?query=python&contracts=permanent&remote=full) · [freelance](https://www.free-work.com/fr/tech-it/jobs?query=python&contracts=contractor&remote=full) en full remote | Affiche le taux de télétravail, le salaire ou le TJM, la date exacte |
-| **Welcome to the Jungle** | [emplois full remote](https://www.welcometothejungle.com/fr/pages/emploi-full-remote) · [développeur Python](https://www.welcometothejungle.com/fr/pages/emploi-developpeur-python) | Fiches détaillées : télétravail, expérience demandée, culture d'entreprise |
-| **RemoteFR** | [compétence Python](https://remotefr.com/competences/python) | Job board 100 % télétravail, centré sur la France |
-| **Jobgether** | [Python, remote, France](https://jobgether.com/remote-jobs/france/python-developer) | Offres remote internationales, avec l'éligibilité par pays |
-| **AFPy** | [forum emploi](https://discuss.afpy.org/c/emplois/14) | Peu d'offres, mais 100 % Python, souvent avec télétravail |
-| **France Travail** | [« développeur python »](https://candidat.francetravail.fr/offres/recherche?motsCles=d%C3%A9veloppeur+python&offresPartenaires=true&tri=1) | Gros volume, CDD et postes junior en région |
-
-### Ma méthode pour trouver une offre adaptée
-
-1. **Filtrer d'abord** : mot-clé `python` ou `django`, « télétravail complet », niveau junior ou
-   « 0 à 2 ans ». J'enregistre la recherche et j'active l'**alerte e-mail** quand le site le permet.
-2. **Lire l'offre à l'envers** : la stack et les missions avant le titre. Un « développeur
-   full-stack » qui fait 80 % de Django m'intéresse ; un « développeur Python » qui fait de la
-   data science, non.
-3. **Vérifier le télétravail** : « full remote » doit être écrit dans l'offre, pas seulement
-   dans le filtre du site. Je note « hybride » sinon.
-4. **Croiser trois signaux** : l'offre, la page de l'entreprise (taille, produit, équipe tech),
-   et les avis (Glassdoor, Welcome to the Jungle).
-5. **Adapter la candidature** : je cite le projet de mon portfolio le plus proche de leur stack
-   (OC Lettings pour Django + CI/CD, Epic Events pour la sécurité et PostgreSQL, SoftDesk pour une
-   API REST).
-6. **Suivre et relancer** : chaque candidature entre dans le tableau ci-dessus. Je relance au
-   bout de **15 jours** sans réponse, et je classe l'offre au bout d'**un mois**.
-
-### Le marché caché
-
-Une partie des postes ne sont jamais publiés. Je m'y prépare par :
-
-- mon profil **LinkedIn**, tenu à jour avec le lien de ce portfolio ;
-- les **candidatures spontanées** auprès des entreprises qui recrutent souvent des profils Django ;
-- la communauté **AFPy** (Association francophone Python), son forum et ses offres d'emploi ;
-- les rencontres en ligne : PyCon France, Django meetups, conférences diffusées en ligne.
-
----
-
 ## 4. Sources de veille technique
 
-### Documentation officielle — la référence avant tout le reste
-
-| Source | Pourquoi |
-|---|---|
-| [Documentation Python (FR)](https://docs.python.org/fr/3/) | Le langage, la bibliothèque standard, les nouveautés de chaque version |
-| [PEP 8](https://peps.python.org/pep-0008/) | La convention de style que je vérifie avec flake8 |
-| [Documentation Django (FR)](https://docs.djangoproject.com/fr/5.2/) | Version LTS que j'utilise sur OC Lettings |
-| [Django REST Framework](https://www.django-rest-framework.org/) | Sérialiseurs, permissions, pagination |
-| [Flask](https://flask.palletsprojects.com/) | Micro-framework de GÜDLFT |
-| [SQLAlchemy](https://docs.sqlalchemy.org/) | ORM d'Epic Events |
-| [pytest](https://docs.pytest.org/) | Fixtures, paramétrage, plugins |
-| [Docker](https://docs.docker.com/) | Images, conteneurs, bonnes pratiques de Dockerfile |
-| [GitHub Actions (FR)](https://docs.github.com/fr/actions) | Pipelines CI/CD |
-
-### Actualité Python et Django — newsletters et podcasts
-
-| Source | Format | Pourquoi |
-|---|---|---|
-| [PyCoder's Weekly](https://pycoders.com/) | Newsletter hebdomadaire | Sélection d'articles et de projets, gratuite |
-| [Python Weekly](https://www.pythonweekly.com/) | Newsletter hebdomadaire | Articles, nouvelles bibliothèques, offres |
-| [Django News](https://django-news.com/) | Newsletter hebdomadaire | Toute l'actualité Django, sorties de version et sécurité |
-| [Real Python](https://realpython.com/) | Tutoriels | Tutoriels approfondis, de débutant à avancé |
-| [Talk Python To Me](https://talkpython.fm/) | Podcast | Entretiens avec des développeurs et mainteneurs |
-| [Python Bytes](https://pythonbytes.fm/) | Podcast court | L'actualité de la semaine en 30 minutes |
-| [Blog officiel Python](https://blog.python.org/) | Blog | Sorties de version |
-| [Blog Django](https://www.djangoproject.com/weblog/) | Blog | Sorties et **correctifs de sécurité** |
-
-### Communautés francophones
-
-| Source | Pourquoi |
-|---|---|
-| [AFPy — forum](https://discuss.afpy.org/) | La communauté Python francophone : entraide, événements, **offres d'emploi** |
-| [Zeste de Savoir](https://zestedesavoir.com/) | Tutoriels et forum en français |
-| [Human Coders News](https://news.humancoders.com/) | Agrégateur d'articles techniques en français |
-| [Journal du hacker](https://www.journalduhacker.net/) | Actualité tech et logiciel libre en français |
-
-### Sécurité
-
-| Source | Pourquoi |
-|---|---|
-| [OWASP Top 10](https://owasp.org/www-project-top-ten/) | Les 10 risques majeurs des applications web, appliqués sur SoftDesk et Epic Events |
-| [CERT-FR](https://www.cert.ssi.gouv.fr/) | Alertes et avis de sécurité officiels |
-| [ANSSI](https://cyber.gouv.fr/) | Guides de bonnes pratiques de l'agence nationale |
-
-### Architecture et bonnes pratiques
-
-| Source | Pourquoi |
-|---|---|
-| [The Twelve-Factor App (FR)](https://12factor.net/fr/) | Les principes d'une application déployable (configuration, secrets, logs) |
-| [Refactoring Guru (FR)](https://refactoring.guru/fr) | Patrons de conception et refactorisation, illustrés |
-| [The Hitchhiker's Guide to Python](https://docs.python-guide.org/) | Structurer un projet Python, outils et conventions |
-| [Awesome Python](https://github.com/vinta/awesome-python) | Liste organisée des meilleures bibliothèques par domaine |
-| [GitHub Trending — Python](https://github.com/trending/python) | Les projets qui montent |
-
-### Tendances du métier
-
-| Source | Pourquoi |
-|---|---|
-| [Enquête Stack Overflow 2026](https://survey.stackoverflow.co/2026) | Technologies, salaires et pratiques des développeurs, chaque année |
-| [Blog Stack Overflow](https://stackoverflow.blog/) | Articles sur le métier et l'outillage |
-| [JetBrains — enquête développeurs Python](https://lp.jetbrains.com/python-developers-survey-2024/) | Usages réels de Python : frameworks, outils, domaines |
-
-### Recherche d'emploi et portfolio
-
-| Source | Pourquoi |
-|---|---|
-| [OpenClassrooms — Trouvez votre premier emploi en tant que développeur](https://openclassrooms.com/fr/courses/8033446-trouvez-votre-premier-emploi-en-tant-que-developpeur) | Méthode de recherche, tableau de bord de suivi, entretiens |
-| [Developer portfolios](https://github.com/emmabostian/developer-portfolios) | Exemples de portfolios de développeurs |
-
----
-
-## 5. Comment je choisis une source
+### Comment je choisis une source
 
 Je garde une source si elle remplit **au moins quatre** de ces critères :
 
@@ -220,29 +153,44 @@ Je garde une source si elle remplit **au moins quatre** de ces critères :
 **Je me méfie** des articles sans date, des contenus sponsorisés présentés comme neutres, et des
 réponses de forum sans explication.
 
----
+### Documentation officielle — la référence avant tout le reste
 
-## 6. Ma routine de mise à jour
+| Source | Pourquoi |
+|---|---|
+| [Documentation Python (FR)](https://docs.python.org/fr/3/) | Le langage, la bibliothèque standard, les nouveautés de chaque version |
+| [PEP 8](https://peps.python.org/pep-0008/) | La convention de style que je vérifie avec flake8 |
+| [Documentation Django (FR)](https://docs.djangoproject.com/fr/5.2/) | Version LTS que j'utilise sur OC Lettings |
+| [Django REST Framework](https://www.django-rest-framework.org/) | Sérialiseurs, permissions, pagination |
+| [Flask](https://flask.palletsprojects.com/) | Micro-framework de GÜDLFT |
+| [SQLAlchemy](https://docs.sqlalchemy.org/) | ORM d'Epic Events |
+| [pytest](https://docs.pytest.org/) | Fixtures, paramétrage, plugins |
+| [Docker](https://docs.docker.com/) | Images, conteneurs, bonnes pratiques de Dockerfile |
+| [GitHub Actions (FR)](https://docs.github.com/fr/actions) | Pipelines CI/CD |
 
-| Quand | Quoi | Durée |
+### Actualité et tutoriels
+
+| Source | Format | Pourquoi |
 |---|---|---|
-| **Chaque jour** | Lire les alertes e-mail des job boards, ajouter les offres retenues au tableau | 10 min |
-| **Chaque lundi** | Lire les newsletters de la semaine, ajouter ici les liens utiles, relancer les candidatures de plus de 15 jours, mettre à jour la date en tête | 30 min |
-| **Après chaque projet** | Ajouter le projet au [portfolio](https://github.com/Hermes3x), compléter le journal de progression | 30 min |
-| **Chaque mois** | Supprimer les sources que je ne lis plus, classer les offres de plus d'un mois | 15 min |
+| [PyCoder's Weekly](https://pycoders.com/) | Newsletter hebdomadaire | La sélection de la semaine en Python : articles, projets, Django inclus |
+| [Real Python](https://realpython.com/) | Tutoriels | Tutoriels approfondis, de débutant à avancé |
+| [Docstring](https://www.youtube.com/@Docstring) | Chaîne YouTube | Python et Django en français : tutoriels et bonnes pratiques |
+| [Vision IA](https://www.youtube.com/@visionia-fr) | Chaîne YouTube | Veille sur l'intelligence artificielle, en français |
 
-**Pourquoi c'est facile à tenir** :
+### Sécurité
 
-- **un seul fichier Markdown**, versionné sur GitHub : je le modifie depuis VS Code ou
-  directement dans le navigateur, et l'historique Git garde une trace de chaque mise à jour ;
-- les **newsletters arrivent seules** dans un dossier dédié de ma messagerie ;
-- les **alertes des job boards** font la recherche à ma place ;
-- un lecteur RSS ([Feedly](https://feedly.com/) ou [Inoreader](https://www.inoreader.com/))
-  regroupe les blogs qui n'ont pas de newsletter.
+| Source | Pourquoi |
+|---|---|
+| [OWASP Top 10](https://owasp.org/www-project-top-ten/) | Les 10 risques majeurs des applications web, appliqués sur SoftDesk et Epic Events |
+
+### Portfolio
+
+| Source | Pourquoi |
+|---|---|
+| [Developer portfolios](https://github.com/emmabostian/developer-portfolios) | Exemples de portfolios de développeurs |
 
 ---
 
-## 7. Journal de progression
+## 5. Journal de progression
 
 | Période | Projet | Ce que j'ai appris |
 |---|---|---|
@@ -256,23 +204,3 @@ réponses de forum sans explication.
 | Août 2026 | **GÜDLFT** | Tests unitaires, d'intégration et fonctionnels, couverture à 100 %, tests de charge Locust, débogage |
 | Sept.–oct. 2026 | **Epic Events CRM** | SQLAlchemy et PostgreSQL, hachage Argon2, JWT, moindre privilège, journalisation Sentry |
 | Oct.–nov. 2026 | **OC Lettings** | Django modulaire, migrations sans perte de données, Docker, GitHub Actions, Render, Sphinx |
-
-### Leçons que je garde
-
-- **Un test doit être vu rouge avant d'être vert** : c'est la seule preuve qu'il vérifie
-  quelque chose.
-- **Je dois pouvoir défendre chaque nom et chaque choix d'architecture.** Depuis Epic Events,
-  je tiens un journal de décisions dès le premier jour : la question, les options, mon choix,
-  ce qu'il coûte.
-- **`pytest` en local avant chaque push**, même pour une correction d'une ligne : le pipeline
-  attrape l'erreur, mais il vaut mieux qu'il n'ait rien à attraper.
-- **Les dépendances non épinglées vieillissent mal** : le même `requirements.txt` n'installe
-  pas le même environnement deux ans plus tard.
-
----
-
-## 8. Historique des mises à jour
-
-| Date | Modification |
-|---|---|
-| 03/11/2026 | Création de la veille : projet professionnel, premières offres, sources, routine, journal de progression |

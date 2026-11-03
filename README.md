@@ -14,10 +14,10 @@ l'algorithmique jusqu'au déploiement continu d'une application Django.
 
 | Domaine | Outils |
 |---|---|
-| **Langage** | Python 3 · PEP 8 · flake8 |
+| **Langage** | Python 3 |
 | **Web & API** | Django · Django REST Framework · JWT · Flask |
 | **Données** | PostgreSQL · SQLAlchemy · SQLite · JSON · CSV |
-| **Qualité** | pytest · pytest-cov · Locust (tests de charge) · tests unitaires, d'intégration, fonctionnels |
+| **Qualité** | PEP 8 vérifiée avec flake8 · pytest · pytest-cov · Locust (tests de charge) · tests unitaires, d'intégration, fonctionnels |
 | **DevOps** | Docker · GitHub Actions (CI/CD) · Render · Sentry · Sphinx / Read the Docs |
 | **Sécurité** | OWASP Top 10 · hachage Argon2 · moindre privilège · RGPD |
 | **Front** | HTML · CSS · JavaScript (API `fetch`) |
@@ -67,7 +67,7 @@ Correction des bugs d'une plateforme de réservation, puis ajout d'une fonctionn
 `Flask` `pytest` `Locust` · *Fork du dépôt OpenClassrooms : corrections, tests et nouvelle
 fonctionnalité sont mon travail.*
 
-### 🛠️ [SoftDesk Support API](https://github.com/Hermes3x/Projet_10) — API REST
+### 🛠️ [SoftDesk Support API](https://github.com/Hermes3x/SoftDesk) — API REST
 
 API de suivi de tickets techniques pour des clients B2B : projets, contributeurs, issues,
 commentaires.
@@ -84,8 +84,8 @@ commentaires.
 
 | Projet | Description | Stack |
 |---|---|---|
-| [LITReview](https://github.com/Hermes3x/Projet_9) | Réseau social de critiques de livres : flux personnalisé, tickets, critiques, abonnements | Django · SQLite |
-| [JustStreamIt](https://github.com/Hermes3x/Projet_6) | Interface web de catalogue de films alimentée par une API REST | HTML · CSS · JavaScript |
+| [LITReview](https://github.com/Hermes3x/LITReview) | Réseau social de critiques de livres : flux personnalisé, tickets, critiques, abonnements | Django · SQLite |
+| [JustStreamIt](https://github.com/Hermes3x/JustStreamIt) | Interface web de catalogue de films alimentée par une API REST | HTML · CSS · JavaScript |
 | [Chess Tournament Manager](https://github.com/Hermes3x/OC_P4_Chess) | Gestion de tournois d'échecs en ligne de commande, appariement suisse, architecture MVC | Python · JSON · flake8 |
 | [Books to Scrape](https://github.com/Hermes3x/OC_P2_Scraper) | Pipeline ETL : extraction des livres d'un site, export CSV par catégorie et images | requests · BeautifulSoup |
 
