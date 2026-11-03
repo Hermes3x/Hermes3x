@@ -93,8 +93,8 @@ moindre privilège) et du déploiement continu (Docker, GitHub Actions, Sentry).
 
 | Entreprise | Poste | Contrat · salaire | Niveau demandé | Statut | Lien |
 |---|---|---|---|---|---|
-| **AVELSEN** (ESN) | Ingénieur·e Full Stack — développeur junior | Temps plein · non indiqué | **0 à 2 ans**, bac+3 à bac+5 | **À candidater** | [Offre](https://www.linkedin.com/jobs/view/4478457609) |
-| **YEVO** | Développeur Python / Django | Temps plein · non indiqué | Expérience Python/Django, durée non précisée | **À candidater** — full remote « selon l'autonomie », à confirmer | [Offre](https://www.linkedin.com/jobs/view/4480259912) |
+| **AVELSEN** (ESN) | Ingénieur·e Full Stack — développeur junior | Temps plein · non indiqué | **0 à 2 ans**, bac+3 à bac+5 | **À candidater** — citer OC Lettings | [Offre](https://www.linkedin.com/jobs/view/4478457609) |
+| **YEVO** | Développeur Python / Django | Temps plein · non indiqué | Expérience Python/Django, durée non précisée | **À candidater** — full remote à confirmer ; citer OC Lettings | [Offre](https://www.linkedin.com/jobs/view/4480259912) |
 | Startup SaaS cybersécurité (via Opus Recruitment) | Développeur fullstack Django | CDI · jusqu'à 65 k€ | Expérience confirmée | À étudier — au-dessus de mon niveau | [Offre](https://www.linkedin.com/jobs/view/4485465903) |
 | Entreprise non nommée (via Jobgether) | Python Developer | Temps plein · non indiqué | 2 ans minimum | À étudier — au-dessus de mon niveau | [Offre](https://www.linkedin.com/jobs/view/4482592681) |
 | **Dashdoc** (SaaS transport) | Software Engineer — Shippers Team | CDI · 50 à 80 k€ | Plus de 3 ans | Repère marché — stack identique à la mienne (Django, DRF, GitHub Actions) | [Offre](https://www.welcometothejungle.com/fr/companies/dashdoc/jobs/software-engineer) |
